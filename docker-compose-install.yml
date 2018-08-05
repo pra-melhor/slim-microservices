@@ -1,0 +1,8 @@
+version: "2"
+services:
+  web:
+    image: composer
+    working_dir: /var/www/html
+    volumes:
+      - ".:/var/www/html"
+    command: composer install
